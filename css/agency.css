@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Pablo Motta - Professional Portfolio v1.0.0 (https://github.com/pablomotta)
- * Copyright 2013-2019 Start Bootstrap
+ * Copyright 2013-2020 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/portfolio2019/blob/master/LICENSE)
  */
 
