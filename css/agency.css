@@ -176,6 +176,7 @@ img::-moz-selection {
 header.masthead {
   text-align: center;
   color: white;
+  background-color: #000;
   background-image: url("../img/stars-1.gif");
   background-repeat: no-repeat;
   background-attachment: scroll;
