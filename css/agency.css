@@ -147,6 +147,33 @@ img::-moz-selection {
   color: #f7d305;
 }
 
+#mainNav .navbar-nav .nav-item .linkedin,
+#mainNav .navbar-nav .nav-item .github {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+}
+
+#mainNav .navbar-nav .nav-item .linkedin:hover,
+#mainNav .navbar-nav .nav-item .github:hover {
+  background-color: #f7d305;
+}
+
+#mainNav .navbar-nav .nav-item .linkedin {
+  border-radius: 3px;
+  width: 20px;
+  height: 20px;
+}
+
+#mainNav .navbar-nav .nav-item .github {
+  border-radius: 25px;
+  width: 23px;
+  height: 23px;
+}
+
 @media (min-width: 992px) {
   #mainNav {
     padding-top: 25px;
@@ -158,6 +185,9 @@ img::-moz-selection {
   #mainNav .navbar-brand {
     font-size: 1.75em;
     transition: all 0.3s;
+  }
+  #mainNav .navbar-nav {
+    align-items: center;
   }
   #mainNav .navbar-nav .nav-item .nav-link {
     padding: 1.1em 1em !important;
