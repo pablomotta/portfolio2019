@@ -1,13 +1,31 @@
 // Styling for the masthead
+@keyframes bg-animation {
+	0% {
+		background-position: left;
+	}
+	100% {
+		background-position: right;
+	}
+}
 header.masthead {
 	text-align: center;
 	color: white;
 	background-color: $black;
-	background-image: url('../img/stars-1.gif');
+	// background-image: url('../img/stars-1.gif');
+	background-image: linear-gradient(
+		45deg,
+		$black,
+		$black,
+		$black,
+		// $gray-900,
+		$gray-700,
+		$primary
+	);
 	background-repeat: no-repeat;
 	background-attachment: scroll;
 	background-position: center center;
-	background-size: cover;
+	background-size: 300%;
+	animation: bg-animation 5s infinite alternate;
 	.intro-text {
 		padding-top: 150px;
 		padding-bottom: 100px;
