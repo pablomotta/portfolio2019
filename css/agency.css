@@ -164,14 +164,16 @@ img::-moz-selection {
 
 #mainNav .navbar-nav .nav-item .linkedin {
   border-radius: 3px;
-  width: 20px;
-  height: 20px;
+  padding: 5px;
+  padding-bottom: 4.5px;
+  padding-left: 6px;
 }
 
 #mainNav .navbar-nav .nav-item .github {
   border-radius: 25px;
-  width: 23px;
-  height: 23px;
+  padding: 5px;
+  padding-top: 5.5px;
+  padding-left: 5.5px;
 }
 
 @media (min-width: 992px) {
@@ -203,15 +205,35 @@ img::-moz-selection {
   }
 }
 
+@-webkit-keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
 header.masthead {
   text-align: center;
   color: white;
   background-color: #000;
-  background-image: url("../img/stars-1.gif");
+  background-image: linear-gradient(45deg, #000, #000, #000, #495057, #f7d305);
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
-  background-size: cover;
+  background-size: 300%;
+  -webkit-animation: bg-animation 5s infinite alternate;
+  animation: bg-animation 5s infinite alternate;
 }
 
 header.masthead .intro-text {
