@@ -232,8 +232,8 @@ header.masthead {
   background-attachment: scroll;
   background-position: center center;
   background-size: 300%;
-  -webkit-animation: bg-animation 10s infinite alternate;
-  animation: bg-animation 10s infinite alternate;
+  -webkit-animation: bg-animation 5s infinite alternate;
+  animation: bg-animation 5s infinite alternate;
 }
 
 header.masthead .intro-text {
