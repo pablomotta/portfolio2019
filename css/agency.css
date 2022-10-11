@@ -163,6 +163,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-nav .nav-item .linkedin {
+  width: 25px;
   border-radius: 3px;
   padding: 5px;
   padding-bottom: 4.5px;
@@ -170,6 +171,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-nav .nav-item .github {
+  width: 25px;
   border-radius: 25px;
   padding: 5px;
   padding-top: 5.5px;
@@ -193,6 +195,11 @@ img::-moz-selection {
   }
   #mainNav .navbar-nav .nav-item .nav-link {
     padding: 1.1em 1em !important;
+  }
+  #mainNav .navbar-nav .nav-item .github {
+    padding-top: 6.5px;
+    padding-left: 6.7px;
+    padding-bottom: 4px;
   }
   #mainNav.navbar-shrink {
     padding-top: 0;

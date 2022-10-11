@@ -38,6 +38,7 @@
 			}
 			.linkedin,
 			.github {
+				// width: 25px;
 				display: flex;
 				align-items: center;
 				justify-content: center;
@@ -45,20 +46,22 @@
 				color: $black;
 				text-align: center;
 				&:hover {
-background-color: $primary;
+					background-color: $primary;
 				}
 			}
 			.linkedin {
+				width: 25px;
 				border-radius: 3px;
 				padding: 5px;
 				padding-bottom: 4.5px;
 				padding-left: 6px;
 			}
 			.github {
+				width: 25px;
 				border-radius: 25px;
-					padding: 5px;
-					padding-top: 5.5px;
-					padding-left: 5.5px;
+				padding: 5px;
+				padding-top: 5.5px;
+				padding-left: 5.5px;
 			}
 		}
 	}
@@ -83,6 +86,11 @@ background-color: $primary;
 			.nav-item {
 				.nav-link {
 					padding: 1.1em 1em !important;
+				}
+				.github {
+					padding-top: 6.5px;
+					padding-left: 6.7px;
+					padding-bottom: 4px;
 				}
 			}
 		}
