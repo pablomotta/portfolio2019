@@ -324,6 +324,11 @@ header.masthead .intro-text h4 {
   cursor: pointer;
 }
 
+#portfolio .portfolio-item .portfolio-link .portfolio-video {
+  padding: 7px 0;
+  background-color: black;
+}
+
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
   position: absolute;
   width: 100%;
