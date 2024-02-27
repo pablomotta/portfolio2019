@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Pablo Motta - Professional Portfolio v1.0.0 (https://github.com/pablomotta)
- * Copyright 2013-2022 Pablo Motta
+ * Copyright 2013-2024 Pablo Motta
  * Licensed under MIT (https://github.com/BlackrockDigital/portfolio2019/blob/master/LICENSE)
  */
 
@@ -173,9 +173,10 @@ img::-moz-selection {
 #mainNav .navbar-nav .nav-item .github {
   width: 25px;
   border-radius: 25px;
-  padding: 5px;
-  padding-top: 5.5px;
-  padding-left: 5.5px;
+  padding-top: 6px;
+  padding-left: 6.5px;
+  padding-bottom: 4.5px;
+  padding-right: 5.5px;
 }
 
 @media (min-width: 992px) {
@@ -199,7 +200,8 @@ img::-moz-selection {
   #mainNav .navbar-nav .nav-item .github {
     padding-top: 6.5px;
     padding-left: 6.7px;
-    padding-bottom: 4px;
+    padding-bottom: 5px;
+    padding-right: 6px;
   }
   #mainNav.navbar-shrink {
     padding-top: 0;
