@@ -21,6 +21,8 @@
 			.portfolio-video {
 				padding: 7px 0;
 				background-color: black;
+				min-width: 330px;
+				min-height: 247px;
 			}
 			.portfolio-hover {
 				position: absolute;
@@ -83,6 +85,12 @@
 	#portfolio {
 		.portfolio-item {
 			margin: 0 0 30px;
+			.portfolio-link {
+				.portfolio-video {
+					min-width: 330px;
+					min-height: 241px;
+				}
+			}
 		}
 	}
 }

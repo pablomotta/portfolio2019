@@ -327,6 +327,8 @@ header.masthead .intro-text h4 {
 #portfolio .portfolio-item .portfolio-link .portfolio-video {
   padding: 7px 0;
   background-color: black;
+  min-width: 330px;
+  min-height: 247px;
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
@@ -393,6 +395,10 @@ header.masthead .intro-text h4 {
 @media (min-width: 767px) {
   #portfolio .portfolio-item {
     margin: 0 0 30px;
+  }
+  #portfolio .portfolio-item .portfolio-link .portfolio-video {
+    min-width: 330px;
+    min-height: 241px;
   }
 }
 
