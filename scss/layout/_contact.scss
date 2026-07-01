@@ -7,6 +7,13 @@ section#contact {
   .section-heading {
     color: $white;
   }
+  .contact-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    color: $white;
+    @include heading-font;
+  }
   .form-group {
     margin-bottom: 25px;
     input,

@@ -62,6 +62,9 @@
 	</head>
 
 	<body id="page-top">
+		<a class="skip-link sr-only sr-only-focusable" href="#main-content"
+			>Skip to main content</a
+		>
 		<!-- Navigation -->
 		<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
 			<div class="container">
@@ -116,6 +119,7 @@
 								class="nav-link js-scroll-trigger"
 								href="https://drive.google.com/file/d/1Vkkl5h-bgbHIc3TjaKvzPiBmDUfG6Yx1/view?usp=sharing"
 								target="_blank"
+								rel="noopener noreferrer"
 								>Resume</a
 							>
 						</li>
@@ -124,9 +128,11 @@
 								class="nav-link js-scroll-trigger"
 								href="https://www.linkedin.com/in/pablomotta/"
 								target="_blank"
+								rel="noopener noreferrer"
+								aria-label="LinkedIn profile"
 							>
 								<div class="linkedin">
-									<i class="fab fa-linkedin-in"></i>
+									<i class="fab fa-linkedin-in" aria-hidden="true"></i>
 								</div>
 							</a>
 						</li>
@@ -135,9 +141,11 @@
 								class="nav-link js-scroll-trigger social"
 								href="https://github.com/pablomotta"
 								target="_blank"
+								rel="noopener noreferrer"
+								aria-label="GitHub profile"
 							>
 								<div class="github">
-									<i class="fab fa-github"></i>
+									<i class="fab fa-github" aria-hidden="true"></i>
 								</div>
 							</a>
 						</li>
@@ -146,20 +154,21 @@
 			</div>
 		</nav>
 
+		<main id="main-content">
 		<!-- Header -->
 		<header class="masthead">
 			<div class="container">
 				<div class="intro-text">
-					<div class="intro-heading text-uppercase">Pablo Motta</div>
-					<div class="intro-lead-in">
+					<h1 class="intro-heading text-uppercase">Pablo Motta</h1>
+					<p class="intro-lead-in">
 						Full Stack Software Engineer
-					</div>
-					<h4 class="mb-5">
+					</p>
+					<p class="masthead-contact mb-5">
 						Los Angeles, CA -
 						<a href="mailto:pmotta.dev@gmail.com"
 							>pmotta.dev@gmail.com</a
 						>
-					</h4>
+					</p>
 					<a
 						class="btn btn-primary btn-xl text-uppercase js-scroll-trigger mt-4"
 						href="#portfolio"
@@ -187,6 +196,7 @@
 							class="portfolio-link"
 							href="https://www.drsquatch.com/"
 							target="_blank"
+							rel="noopener noreferrer"
 						>
 							<div class="portfolio-hover">
 								<div class="portfolio-hover-content">
@@ -221,6 +231,7 @@
 							class="portfolio-link background-black"
 							href="https://www.thespherevegas.com/"
 							target="_blank"
+							rel="noopener noreferrer"
 						>
 							<div class="portfolio-hover">
 								<div class="portfolio-hover-content">
@@ -255,6 +266,7 @@
 							class="portfolio-link"
 							href="https://ruggable.com/"
 							target="_blank"
+							rel="noopener noreferrer"
 						>
 							<div class="portfolio-hover">
 								<div class="portfolio-hover-content">
@@ -380,7 +392,7 @@
 							<img
 								class="mx-auto rounded-circle"
 								src="img/team/pablo-sm2.jpg"
-								alt=""
+								alt="Portrait of Pablo Motta"
 							/>
 							<h4>Pablo Motta</h4>
 							<p class="text-muted">Software Engineer</p>
@@ -429,16 +441,20 @@
 								<a
 									href="https://github.com/pablomotta"
 									target="_blank"
+									rel="noopener noreferrer"
+									aria-label="GitHub profile"
 								>
-									<i class="fab fa-github"></i>
+									<i class="fab fa-github" aria-hidden="true"></i>
 								</a>
 							</li>
 							<li class="list-inline-item">
 								<a
 									href="https://www.linkedin.com/in/pablomotta/"
 									target="_blank"
+									rel="noopener noreferrer"
+									aria-label="LinkedIn profile"
 								>
-									<i class="fab fa-linkedin-in"></i>
+									<i class="fab fa-linkedin-in" aria-hidden="true"></i>
 								</a>
 							</li>
 						</ul>
@@ -446,7 +462,8 @@
 							class="btn btn-primary btn-lg js-scroll-trigger mt-4"
 							href="https://drive.google.com/file/d/1Vkkl5h-bgbHIc3TjaKvzPiBmDUfG6Yx1/view?usp=sharing"
 							target="_blank"
-							><i class="fa fa-file"></i> Resume</a
+							rel="noopener noreferrer"
+							><i class="fa fa-file" aria-hidden="true"></i> Resume</a
 						>
 					</div>
 				</div>
@@ -475,6 +492,9 @@
 							<div class="row">
 								<div class="col-md-6">
 									<div class="form-group">
+										<label class="contact-label" for="name"
+											>Your Name *</label
+										>
 										<input
 											class="form-control"
 											id="name"
@@ -487,6 +507,9 @@
 										<p class="help-block text-danger"></p>
 									</div>
 									<div class="form-group">
+										<label class="contact-label" for="email"
+											>Your Email *</label
+										>
 										<input
 											class="form-control"
 											id="email"
@@ -499,6 +522,9 @@
 										<p class="help-block text-danger"></p>
 									</div>
 									<div class="form-group">
+										<label class="contact-label" for="phone"
+											>Your Phone *</label
+										>
 										<input
 											class="form-control"
 											id="phone"
@@ -513,6 +539,9 @@
 								</div>
 								<div class="col-md-6">
 									<div class="form-group">
+										<label class="contact-label" for="message"
+											>Your Message *</label
+										>
 										<textarea
 											class="form-control"
 											id="message"
@@ -546,6 +575,7 @@
 				</div>
 			</div>
 		</section>
+		</main>
 
 		<!-- Footer -->
 		<footer class="footer">
@@ -571,7 +601,6 @@
 
 		<!-- Contact form JavaScript -->
 		<script src="js/jqBootstrapValidation.js"></script>
-		<script src="js/contact_me.js"></script>
 
 		<!-- Custom scripts for this template -->
 		<script src="js/agency.min.js"></script>
