@@ -36,6 +36,10 @@ button:focus-visible,
   color: #f7d305 !important;
 }
 
+.text-muted {
+  color: #495057 !important;
+}
+
 h1,
 h2,
 h3,
