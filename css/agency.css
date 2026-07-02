@@ -115,8 +115,14 @@ img::-moz-selection {
   border-color: rgb(222.005952381, 189.6488095238, 4.494047619) !important;
   color: #212529;
 }
+.btn-primary:focus {
+  box-shadow: none !important;
+}
+.btn-primary:focus:not(:focus-visible) {
+  outline: none;
+}
 .btn-primary:focus-visible {
-  box-shadow: 0 0 0 0.2rem rgba(40, 166, 204, 0.5) !important;
+  box-shadow: none !important;
 }
 
 #mainNav {

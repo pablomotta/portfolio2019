@@ -23,7 +23,13 @@
         border-color: color.adjust($primary, $lightness: -5%) !important;
     color: $gray-900 ;
     }
+    &:focus {
+        box-shadow: none !important;
+    }
+    &:focus:not(:focus-visible) {
+        outline: none;
+    }
     &:focus-visible {
-        box-shadow: 0 0 0 0.2rem rgba(40, 166, 204, 0.5) !important;
+        box-shadow: none !important;
     }
 }
