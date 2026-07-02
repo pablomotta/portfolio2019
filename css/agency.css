@@ -281,6 +281,13 @@ header.masthead .intro-text .masthead-contact {
     font-size: 1.2rem;
   }
 }
+@media (prefers-reduced-motion: reduce) {
+  header.masthead {
+    animation: none;
+    background-size: cover;
+    background-position: center center;
+  }
+}
 .service-heading {
   margin: 15px 0;
   text-transform: none;

@@ -83,3 +83,11 @@ header.masthead {
 		}
 	}
 }
+
+@media (prefers-reduced-motion: reduce) {
+	header.masthead {
+		animation: none;
+		background-size: cover;
+		background-position: center center;
+	}
+}
