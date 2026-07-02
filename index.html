@@ -197,6 +197,7 @@
 							href="https://www.drsquatch.com/"
 							target="_blank"
 							rel="noopener noreferrer"
+							aria-label="Visit Dr Squatch live site"
 						>
 							<div class="portfolio-hover">
 								<div class="portfolio-hover-content">
@@ -218,9 +219,14 @@
 							<p class="text-muted">
 								React, TypeScript, Node, GraphQL
 							</p>
-							<span class="portfolio-private-label"
-								>Private Code</span
+							<button
+								class="btn btn-primary btn-md"
+								type="button"
+								data-toggle="modal"
+								data-target="#portfolioModalDrSquatch"
 							>
+								View details
+							</button>
 						</div>
 					</div>
 					<!-- sphere  -->
@@ -230,6 +236,7 @@
 							href="https://www.thespherevegas.com/"
 							target="_blank"
 							rel="noopener noreferrer"
+							aria-label="Visit MSG Sphere live site"
 						>
 							<div class="portfolio-hover">
 								<div class="portfolio-hover-content">
@@ -252,9 +259,14 @@
 							<p class="text-muted">
 								React, Javascript, Python, FastAPI
 							</p>
-							<span class="portfolio-private-label"
-								>Private Code</span
+							<button
+								class="btn btn-primary btn-md"
+								type="button"
+								data-toggle="modal"
+								data-target="#portfolioModalSphere"
 							>
+								View details
+							</button>
 						</div>
 					</div>
 					<!-- ruggable  -->
@@ -264,6 +276,7 @@
 							href="https://ruggable.com/"
 							target="_blank"
 							rel="noopener noreferrer"
+							aria-label="Visit Ruggable live site"
 						>
 							<div class="portfolio-hover">
 								<div class="portfolio-hover-content">
@@ -285,9 +298,14 @@
 							<p class="text-muted">
 								React, Typescript, Storybook, Node
 							</p>
-							<span class="portfolio-private-label"
-								>Private Code</span
+							<button
+								class="btn btn-primary btn-md"
+								type="button"
+								data-toggle="modal"
+								data-target="#portfolioModalRuggable"
 							>
+								View details
+							</button>
 						</div>
 					</div>
 				</div>
@@ -571,6 +589,289 @@
 			</div>
 		</section>
 		</main>
+
+		<!-- Portfolio modals -->
+		<div
+			class="portfolio-modal modal fade"
+			id="portfolioModalDrSquatch"
+			tabindex="-1"
+			role="dialog"
+			aria-labelledby="portfolioModalDrSquatchTitle"
+			aria-hidden="true"
+		>
+			<div
+				class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+			>
+				<div class="modal-content">
+					<button
+						type="button"
+						class="close-modal"
+						data-dismiss="modal"
+						aria-label="Close modal"
+					>
+						<div class="lr">
+							<div class="rl"></div>
+						</div>
+					</button>
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-lg-8">
+								<div class="modal-body">
+									<h2
+										class="text-uppercase"
+										id="portfolioModalDrSquatchTitle"
+									>
+										Dr. Squatch
+									</h2>
+									<p class="item-intro text-muted">
+										Full Stack Software Engineer · Jun 2024
+										– Jun 2026 · Remote/Marina Del Rey, CA
+									</p>
+									<p class="text-muted portfolio-modal-summary">
+										Worked on the Hydrogen storefront
+										engineering team building platform
+										features, CMS-driven page systems,
+										subscription flows, and growth
+										experiences supporting marketing
+										campaigns and acquisition initiatives.
+									</p>
+									<ul class="portfolio-modal-details text-muted">
+										<li>
+											Contributed to a storefront
+											performance initiative and Hydrogen
+											migration reducing page load times by
+											~50% with an additional ~30%
+											improvement post-launch.
+										</li>
+										<li>
+											Designed and released a Content Blocks
+											system enabling CMS-driven page
+											composition, accelerating campaign
+											deployment and reducing engineering
+											dependency.
+										</li>
+										<li>
+											Built and launched New Customer Offer
+											experiences, including the
+											Subscription Offer Showcase,
+											supporting multi-market rollout and
+											new customer acquisition initiatives.
+										</li>
+									</ul>
+									<ul class="list-inline">
+										<li class="list-inline-item">
+											<a
+												class="btn btn-primary btn-xl text-uppercase"
+												href="https://www.drsquatch.com/"
+												target="_blank"
+												rel="noopener noreferrer"
+												>View Live Site</a
+											>
+										</li>
+										<li class="list-inline-item">
+											<button
+												class="btn btn-primary btn-xl text-uppercase"
+												data-dismiss="modal"
+												type="button"
+											>
+												Close
+											</button>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div
+			class="portfolio-modal modal fade"
+			id="portfolioModalSphere"
+			tabindex="-1"
+			role="dialog"
+			aria-labelledby="portfolioModalSphereTitle"
+			aria-hidden="true"
+		>
+			<div
+				class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+			>
+				<div class="modal-content">
+					<button
+						type="button"
+						class="close-modal"
+						data-dismiss="modal"
+						aria-label="Close modal"
+					>
+						<div class="lr">
+							<div class="rl"></div>
+						</div>
+					</button>
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-lg-8">
+								<div class="modal-body">
+									<h2
+										class="text-uppercase"
+										id="portfolioModalSphereTitle"
+									>
+										MSG Sphere Studios
+									</h2>
+									<p class="item-intro text-muted">
+										Full Stack Software Engineer · Dec 2022
+										– Jun 2024 · Remote/Burbank, CA
+									</p>
+									<p class="text-muted portfolio-modal-summary">
+										Worked on the studio pipeline technology
+										team building internal software tools such
+										as web apps, CLIs, task automation, and
+										software integrations to optimize the
+										post-production pipeline.
+									</p>
+									<ul class="portfolio-modal-details text-muted">
+										<li>
+											Enhanced and maintained a studio
+											pipeline web platform managing
+											post-production projects, DCC
+											versions, and project assets,
+											increasing productivity by 30%.
+										</li>
+										<li>
+											Helped build and maintain a PyWebView
+											desktop tool powered by a Python CLI
+											that helped artists track work, manage
+											assets, and collaborate with other
+											artists, improving workflow
+											productivity by 25%.
+										</li>
+										<li>
+											Maintained and improved a React
+											component library powering two web
+											apps, improving development velocity
+											and maintainability.
+										</li>
+									</ul>
+									<ul class="list-inline">
+										<li class="list-inline-item">
+											<a
+												class="btn btn-primary btn-xl text-uppercase"
+												href="https://www.thespherevegas.com/"
+												target="_blank"
+												rel="noopener noreferrer"
+												>View Live Site</a
+											>
+										</li>
+										<li class="list-inline-item">
+											<button
+												class="btn btn-primary btn-xl text-uppercase"
+												data-dismiss="modal"
+												type="button"
+											>
+												Close
+											</button>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div
+			class="portfolio-modal modal fade"
+			id="portfolioModalRuggable"
+			tabindex="-1"
+			role="dialog"
+			aria-labelledby="portfolioModalRuggableTitle"
+			aria-hidden="true"
+		>
+			<div
+				class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+			>
+				<div class="modal-content">
+					<button
+						type="button"
+						class="close-modal"
+						data-dismiss="modal"
+						aria-label="Close modal"
+					>
+						<div class="lr">
+							<div class="rl"></div>
+						</div>
+					</button>
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-lg-8">
+								<div class="modal-body">
+									<h2
+										class="text-uppercase"
+										id="portfolioModalRuggableTitle"
+									>
+										Ruggable
+									</h2>
+									<p class="item-intro text-muted">
+										Software Engineer · Oct 2021 – Sep 2022
+										· Remote/Gardena, CA
+									</p>
+									<p class="text-muted portfolio-modal-summary">
+										Worked on an agile team building
+										components for a Shopify storefront
+										integrated with a headless CMS.
+									</p>
+									<ul class="portfolio-modal-details text-muted">
+										<li>
+											Built UI components using React,
+											TypeScript, and Tailwind to power
+											headless CMS pages, saving hundreds of
+											maintenance and developer hours.
+										</li>
+										<li>
+											Increased Lighthouse performance
+											scores by over 20% by reducing CSS
+											and implementing Tailwind CSS.
+										</li>
+										<li>
+											Updated and maintained CMS content
+											models using Contentful, TypeScript,
+											and Node.js.
+										</li>
+										<li>
+											Maintained and optimized legacy
+											Shopify Liquid codebase supporting
+											fixes, updates, and feature
+											additions.
+										</li>
+									</ul>
+									<ul class="list-inline">
+										<li class="list-inline-item">
+											<a
+												class="btn btn-primary btn-xl text-uppercase"
+												href="https://ruggable.com/"
+												target="_blank"
+												rel="noopener noreferrer"
+												>View Live Site</a
+											>
+										</li>
+										<li class="list-inline-item">
+											<button
+												class="btn btn-primary btn-xl text-uppercase"
+												data-dismiss="modal"
+												type="button"
+											>
+												Close
+											</button>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<!-- Footer -->
 		<footer class="footer">
