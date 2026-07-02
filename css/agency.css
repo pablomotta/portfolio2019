@@ -127,7 +127,7 @@ img::-moz-selection {
   right: 0;
   padding: 10px 12px;
   text-transform: uppercase;
-  color: white;
+  color: #000;
   border: 0;
   background-color: #f7d305;
   border-radius: 50%;
