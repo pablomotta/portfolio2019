@@ -1,4 +1,6 @@
 // Button Styles
+@use 'sass:color';
+
 .btn {
     @include heading-font;
     font-weight: 700;
@@ -17,8 +19,8 @@
     &:active,
     &:focus,
     &:hover {
-        background-color: darken($primary, 5%) !important;
-        border-color: darken($primary, 5%) !important;
+        background-color: color.adjust($primary, $lightness: -5%) !important;
+        border-color: color.adjust($primary, $lightness: -5%) !important;
     color: $gray-900 ;
     }
     &:focus-visible {

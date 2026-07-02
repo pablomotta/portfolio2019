@@ -78,6 +78,8 @@ function css() {
     .pipe(sass({
       outputStyle: "expanded",
       includePaths: "./node_modules",
+      // @import and legacy render API remain until SCSS @use migration
+      silenceDeprecations: ["legacy-js-api", "import"],
     }))
     .on("error", sass.logError)
     .pipe(autoprefixer({

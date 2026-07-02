@@ -1,4 +1,6 @@
 // Styling for the navbar
+@use 'sass:color';
+
 #mainNav {
 	background-color: $black;
 	.navbar-toggler {
@@ -19,7 +21,7 @@
 		&:active,
 		&:focus,
 		&:hover {
-			color: darken($primary, 10%);
+			color: color.adjust($primary, $lightness: -10%);
 		}
 	}
 	.navbar-nav {

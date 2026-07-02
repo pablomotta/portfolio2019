@@ -1,4 +1,6 @@
 // Styling for the portfolio section
+@use 'sass:color';
+
 #portfolio {
 	.portfolio-container {
 		display: flex;
@@ -47,7 +49,7 @@
 				-moz-transition: all ease 0.5s;
 				transition: all ease 0.5s;
 				opacity: 0;
-				background: fade-out($primary, 0.1);
+				background: color.adjust($primary, $alpha: -0.1);
 				&:hover {
 					opacity: 1;
 				}
