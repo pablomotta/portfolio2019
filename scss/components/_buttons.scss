@@ -21,8 +21,7 @@
         border-color: darken($primary, 5%) !important;
     color: $gray-900 ;
     }
-    &:active,
-    &:focus {
+    &:focus-visible {
         box-shadow: 0 0 0 0.2rem rgba(40, 166, 204, 0.5) !important;
     }
 }

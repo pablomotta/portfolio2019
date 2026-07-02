@@ -31,12 +31,14 @@ ul.social-buttons {
       transition: all 0.3s;
       color: white;
       border-radius: 100%;
-      outline: none;
       background-color: $gray-900;
       &:active,
-      &:focus,
       &:hover {
         background-color: $primary;
+      }
+      &:focus-visible {
+        outline: 3px solid $primary;
+        outline-offset: 3px;
       }
     }
   }
