@@ -6,6 +6,11 @@ body {
   @include body-font;
 }
 
+.container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 p {
   line-height: 1.75;
 }
@@ -48,11 +53,11 @@ h6 {
 }
 
 .page-section {
-  padding: 100px 0;
+  padding: 2rem 0;
   h2.section-heading {
-    font-size: 40px;
+    font-size: 1.875rem;
     margin-top: 0;
-    margin-bottom: 15px;
+    margin-bottom: 2.5rem;
   }
   h3.section-subheading {
     font-size: 16px;
@@ -64,8 +69,19 @@ h6 {
   }
 }
 @media(min-width:768px) {
-  section {
-    padding: 150px 0;
+  .page-section {
+    padding: 3rem 0;
+    h2.section-heading {
+      font-size: 2.25rem;
+      margin-bottom: 3.5rem;
+    }
+  }
+}
+@media(min-width:1280px) {
+  .page-section {
+    h2.section-heading {
+      font-size: 3rem;
+    }
   }
 }
 

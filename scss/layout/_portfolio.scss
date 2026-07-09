@@ -89,6 +89,12 @@
 				margin: 0;
 				@include serif-font;
 			}
+			.portfolio-result {
+				font-size: 15px;
+				font-style: normal;
+				color: $gray-700;
+				@include body-font;
+			}
 			.portfolio-private-label {
 				display: inline-block;
 				margin-top: 10px;
