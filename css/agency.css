@@ -398,7 +398,7 @@ header.masthead .intro-text .intro-cta {
   right: 0;
   margin: 1rem 0;
   max-width: 330px;
-  border-radius: 16px;
+  border-radius: 0.5rem;
   overflow: hidden;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
