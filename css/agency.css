@@ -116,9 +116,14 @@ img::-moz-selection {
 
 .btn-xl {
   font-size: 18px;
-  padding: 20px 40px;
+  padding: 0.75rem 1.75rem;
 }
 
+@media (min-width: 768px) {
+  .btn-xl {
+    padding: 1rem 2rem;
+  }
+}
 .btn-ghost {
   background-color: transparent;
   border: 2px solid #f7d305;
@@ -393,6 +398,8 @@ header.masthead .intro-text .intro-cta {
   justify-content: space-evenly;
   flex-wrap: wrap;
   align-items: center;
+  -moz-column-gap: 1rem;
+  column-gap: 1rem;
 }
 #portfolio .portfolio-item {
   right: 0;
