@@ -4,15 +4,60 @@
 #mainNav {
 	background-color: $black;
 	.navbar-toggler {
-		font-size: 1rem;
-		right: 0;
-		padding: 10px 12px;
-		text-transform: uppercase;
-		color: $black;
+		position: relative;
+		width: 44px;
+		height: 44px;
+		padding: 0;
 		border: 0;
-		background-color: $primary;
-		border-radius: 50%;
-		@include heading-font;
+		background-color: transparent;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		.toggler-icon {
+			position: relative;
+			display: block;
+			width: 28px;
+			height: 18px;
+		}
+		.bar {
+			position: absolute;
+			left: 0;
+			width: 28px;
+			height: 3px;
+			border-radius: 2px;
+			background-color: $primary;
+			transition: transform 0.3s ease, opacity 0.2s ease,
+				top 0.3s ease;
+		}
+		.bar-top {
+			top: 0;
+		}
+		.bar-mid {
+			top: 50%;
+			transform: translateY(-50%);
+		}
+		.bar-bot {
+			top: 100%;
+			transform: translateY(-100%);
+		}
+		&[aria-expanded="true"] {
+			.bar-top {
+				top: 50%;
+				transform: translateY(-50%) rotate(45deg);
+			}
+			.bar-mid {
+				opacity: 0;
+			}
+			.bar-bot {
+				top: 50%;
+				transform: translateY(-50%) rotate(-45deg);
+			}
+		}
+	}
+	@media (prefers-reduced-motion: reduce) {
+		.navbar-toggler .bar {
+			transition: none;
+		}
 	}
 	.navbar-brand {
 		color: $primary;

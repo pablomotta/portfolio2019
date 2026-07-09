@@ -163,15 +163,57 @@ img::-moz-selection {
   background-color: #000;
 }
 #mainNav .navbar-toggler {
-  font-size: 1rem;
-  right: 0;
-  padding: 10px 12px;
-  text-transform: uppercase;
-  color: #000;
+  position: relative;
+  width: 44px;
+  height: 44px;
+  padding: 0;
   border: 0;
+  background-color: transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+#mainNav .navbar-toggler .toggler-icon {
+  position: relative;
+  display: block;
+  width: 28px;
+  height: 18px;
+}
+#mainNav .navbar-toggler .bar {
+  position: absolute;
+  left: 0;
+  width: 28px;
+  height: 3px;
+  border-radius: 2px;
   background-color: #f7d305;
-  border-radius: 50%;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  transition: transform 0.3s ease, opacity 0.2s ease, top 0.3s ease;
+}
+#mainNav .navbar-toggler .bar-top {
+  top: 0;
+}
+#mainNav .navbar-toggler .bar-mid {
+  top: 50%;
+  transform: translateY(-50%);
+}
+#mainNav .navbar-toggler .bar-bot {
+  top: 100%;
+  transform: translateY(-100%);
+}
+#mainNav .navbar-toggler[aria-expanded=true] .bar-top {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+#mainNav .navbar-toggler[aria-expanded=true] .bar-mid {
+  opacity: 0;
+}
+#mainNav .navbar-toggler[aria-expanded=true] .bar-bot {
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+}
+@media (prefers-reduced-motion: reduce) {
+  #mainNav .navbar-toggler .bar {
+    transition: none;
+  }
 }
 #mainNav .navbar-brand {
   color: #f7d305;
