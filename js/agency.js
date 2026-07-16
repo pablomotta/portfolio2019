@@ -39,4 +39,15 @@
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
+  // Collapse the mobile navbar when clicking outside of it
+  $(document).click(function(event) {
+    var $navbarCollapse = $('.navbar-collapse');
+    if (
+      $navbarCollapse.hasClass('show') &&
+      !$(event.target).closest('.navbar-collapse, .navbar-toggler').length
+    ) {
+      $navbarCollapse.collapse('hide');
+    }
+  });
+
 })(jQuery); // End of use strict
