@@ -1,66 +1,12 @@
 ---
-description: Agent must not commit; user tests each change before committing
+description: Repository conventions — ownership, git workflow, branch naming, commit and PR format, testing. Defined in CLAUDE.md.
 alwaysApply: true
 ---
 
-# Agent workflow — commits and testing
+# Repository conventions
 
-## Git: user commits everything
+The conventions for this repository are defined in @CLAUDE.md. Read it and follow it as written.
 
-- **Never** run `git commit`, `git push`, `git add` (for the purpose of committing), or create/amend commits unless the user **explicitly** asks in that message (e.g. "commit this", "create a commit").
-- "Implement the plan", "fix this", or "apply the changes" does **not** mean commit.
-- After making changes, leave them **uncommitted** and tell the user what to review.
-- If the user asks for a commit message suggestion, provide text only — do not run `git commit` unless they ask you to.
-- Do not push to remote unless explicitly asked.
+It covers ownership and AI attribution, git workflow, branch naming, commit message format, PR descriptions, testing before handoff, and the handoff format.
 
-## Commit message format
-
-When the user asks for a commit message, suggest **one concise line** using [Conventional Commits](https://www.conventionalcommits.org/):
-
-```
-<type>: <short description in imperative mood>
-```
-
-**Types:** `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`, `build`, `ci`, `perf`, `a11y`
-
-**Rules:**
-- Lowercase type prefix, no scope unless it adds clarity (e.g. `fix(a11y): …`)
-- Imperative mood: "add labels" not "added labels"
-- One line, ~72 characters max — no body unless the user asks
-- Describe **why/what**, not a file list
-
-**Examples:**
-
-```
-feat: add skip link and main landmark
-fix: meet AA contrast on muted text
-fix(a11y): add visible labels to contact form
-docs: add WCAG audit report
-chore: update resume link
-```
-
-Provide the message ready to copy-paste; do not run `git commit`.
-
-## Test before handoff
-
-After each logical change (or phase of work), **run tests yourself** and report results before asking the user to commit.
-
-For this project, use as appropriate:
-
-| Check | Command |
-|-------|---------|
-| Build | `npm run build` |
-| Local preview | `npm start` (http://localhost:3000) |
-| Accessibility | `npx @axe-core/cli http://localhost:3000 --tags wcag2a,wcag2aa,wcag21aa,wcag22aa` |
-
-- If a check fails, fix it or report the failure clearly — do not tell the user to commit broken work.
-- Summarize what was tested and what the user should manually verify in the browser (layout, keyboard nav, etc.).
-
-## Handoff format
-
-When work is ready for the user to commit:
-
-1. List changed files
-2. Test results (pass/fail)
-3. Suggested commit message(s) in conventional format (see above) — user copies and commits
-4. Reminder that commits are theirs to make
+`CLAUDE.md` is the single source of truth. Do not restate its rules here: duplicating them is what this reference exists to avoid, and a copy that drifts is worse than no copy.
