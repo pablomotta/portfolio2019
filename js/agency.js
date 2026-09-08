@@ -50,4 +50,7 @@
     }
   });
 
+  // Keep the footer year current
+  $('#footer-year').text(new Date().getFullYear());
+
 })(jQuery); // End of use strict
